@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COBOL Programming - COURSA 90s Style</title>
+  <style>
+    body { background-color: #ffcc99; font-family: "Comic Sans MS", cursive, sans-serif; color: #000; text-align: center; margin: 0; }
+    h1 { color: darkred; text-shadow: 2px 2px yellow; font-size: 40px; }
+    h2 { color: blue; font-size: 28px; }
+    h3 { color: darkgreen; font-size: 24px; text-decoration: underline; }
+    marquee { font-size: 20px; color: green; font-weight: bold; }
+    table { margin: 30px auto; border: 5px solid #000; background-color: #fff8dc; }
+    td { padding: 20px; text-align: left; }
+    pre { background-color: #f0f0f0; border: 2px solid #000; padding: 15px; text-align: left; overflow-x: auto; }
+    .back-btn { display: inline-block; padding: 15px 25px; margin: 20px; font-size: 18px; font-weight: bold; background-color: #ffcc00; border: 3px solid #000; cursor: pointer; text-decoration: none; color: black; }
+    .back-btn:hover { background-color: #ff6600; color: white; }
+    footer { margin-top: 30px; padding: 15px; background-color: #000080; color: white; font-size: 14px; }
+    a { color: yellow; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; }
+    .buy-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #ffcc00;  /* warm 90s yellow */
+    border: 3px solid #000;     /* black border for vintage look */
+    cursor: pointer;
+    text-shadow: 1px 1px #fff; /* subtle 3D text effect */
+    transition: all 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: #ff6600; /* bright orange on hover */
+    color: white;
+    transform: scale(1.05);    /* slight zoom effect */
+}
+  </style>
+</head>
+<body>
+
+<h1>🌟 COBOL Programming 🌟</h1>
+<marquee>Learn the Basics of COBOL Programming in Vintage 90s Style 🚀</marquee>
+
+<h2>Introduction to COBOL</h2>
+<p>COBOL (Common Business Oriented Language) is one of the oldest programming languages. It is mainly used for business, finance, and administrative systems for companies and governments.</p>
+
+<h3>Basic Structure of a COBOL Program</h3>
+<pre>
+IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLO-WORLD.
+
+PROCEDURE DIVISION.
+    DISPLAY "Hello, World!".
+    STOP RUN.
+</pre>
+
+<h3>Key Concepts for Beginners</h3>
+<table>
+<tr>
+<td>
+<b>1. Variables & Data Types</b><br>
+<pre>
+01 AGE        PIC 9(2) VALUE 20.
+01 SALARY     PIC 9(5)V99 VALUE 5000.50.
+01 NAME       PIC A(20) VALUE "Suhas".
+</pre>
+</td>
+<td>
+<b>2. Arithmetic Operations</b><br>
+<pre>
+COMPUTE TOTAL = PRICE + TAX
+COMPUTE DIFFERENCE = A - B
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<b>3. Conditional Statements</b><br>
+<pre>
+IF SCORE &gt;= 50
+    DISPLAY "Pass"
+ELSE
+    DISPLAY "Fail"
+END-IF
+</pre>
+</td>
+<td>
+<b>4. Loops</b><br>
+<pre>
+PERFORM VARYING I FROM 1 BY 1 UNTIL I &gt; 5
+    DISPLAY I
+END-PERFORM
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<b>5. Sections & Paragraphs</b><br>
+<pre>
+PROCEDURE DIVISION.
+    PARAGRAPH1.
+        DISPLAY "Welcome".
+    PARAGRAPH2.
+        DISPLAY "COBOL Basics".
+</pre>
+</td>
+<td>
+<b>6. Display & Input</b><br>
+<pre>
+DISPLAY "Enter your age:".
+ACCEPT AGE.
+DISPLAY "Your age is " AGE.
+</pre>
+</td>
+</tr>
+</table>
+
+<h3>Example Program: Simple Addition</h3>
+<pre>
+IDENTIFICATION DIVISION.
+PROGRAM-ID. ADDITION.
+
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 NUM1 PIC 9(2) VALUE 10.
+01 NUM2 PIC 9(2) VALUE 20.
+01 SUM  PIC 9(3).
+
+PROCEDURE DIVISION.
+    COMPUTE SUM = NUM1 + NUM2
+    DISPLAY "SUM = " SUM
+    STOP RUN.
+</pre>
+<div class="buy">
+  <button class="buy-btn" onclick="location.href='buynow.html'">Buy Now</button>
+
+</div>
+
+<a href="updatd one.html" class="back-btn">⬅ Back to Courses</a>
+
+<footer>
+<p>&copy; 1999 COURSA. All Rights Reserved.</p>
+<p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a></p>
+</footer>
+
+</body>
+</html>

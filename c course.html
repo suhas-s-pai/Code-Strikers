@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C Programming - COURSA 90s Style</title>
+  <style>
+    body {
+      background-color: #ffcc99;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #000000;
+      text-align: center;
+      margin: 0;
+    }
+
+    h1 {
+      color: darkred;
+      text-shadow: 2px 2px yellow;
+      font-size: 40px;
+    }
+
+    h2 {
+      color: blue;
+      font-size: 28px;
+    }
+
+    h3 {
+      color: darkgreen;
+      font-size: 24px;
+      text-decoration: underline;
+    }
+
+    marquee {
+      font-size: 20px;
+      color: green;
+      font-weight: bold;
+    }
+
+    table {
+      margin: 30px auto;
+      border: 5px solid #000;
+      background-color: #fff8dc;
+    }
+
+    td {
+      padding: 20px;
+      text-align: left;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      border: 2px solid #000;
+      padding: 15px;
+      text-align: left;
+      overflow-x: auto;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #ffcc00;
+      border: 3px solid #000;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+
+    .back-btn:hover {
+      background-color: #ff6600;
+      color: white;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #000080;
+      color: white;
+      font-size: 14px;
+    }
+
+    a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .buy-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #ffcc00;  /* warm 90s yellow */
+    border: 3px solid #000;     /* black border for vintage look */
+    cursor: pointer;
+    text-shadow: 1px 1px #fff; /* subtle 3D text effect */
+    transition: all 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: #ff6600; /* bright orange on hover */
+    color: white;
+    transform: scale(1.05);    /* slight zoom effect */
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <h1>🌟 C Programming 🌟</h1>
+  <marquee>Learn the Basics of C Programming in Vintage 90s Style 🚀</marquee>
+
+  <!-- Sections -->
+  <h2>Introduction to C</h2>
+  <p>C is a general-purpose programming language developed in the early 1970s. It is widely used for system programming, game development, and embedded systems. C provides a foundation for many modern languages like C++, Java, and Python.</p>
+
+  <h3>Basic Structure of a C Program</h3>
+  <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+  </pre>
+
+  <h3>Key Concepts for Beginners</h3>
+  <table>
+    <tr>
+      <td>
+        <b>1. Variables</b><br>
+        Used to store data. Example:<br>
+        <pre>
+int age = 20;
+float salary = 5000.50;
+char grade = 'A';
+        </pre>
+      </td>
+      <td>
+        <b>2. Data Types</b><br>
+        Common types:<br>
+        <pre>
+int      // integer numbers
+float    // decimal numbers
+char     // single character
+double   // larger decimal numbers
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>3. Operators</b><br>
+        Examples:<br>
+        <pre>
++   -   *   /   %   // arithmetic
+==  !=  &lt;  &gt;  &lt;= &gt;= // comparison
+&&  ||  !           // logical
+        </pre>
+      </td>
+      <td>
+        <b>4. Loops</b><br>
+        Repeated execution:<br>
+        <pre>
+for(int i=0; i&lt;5; i++) { ... }
+while(condition) { ... }
+do { ... } while(condition);
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>5. Conditional Statements</b><br>
+        Example:<br>
+        <pre>
+if(score &gt;= 50) {
+    printf("Pass");
+} else {
+    printf("Fail");
+}
+        </pre>
+      </td>
+      <td>
+        <b>6. Functions</b><br>
+        Used to organize code:<br>
+        <pre>
+int sum(int a, int b) {
+    return a + b;
+}
+        </pre>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Example Program: Simple Calculator</h3>
+  <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a, b;
+    char op;
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter operator (+, -, *, /): ");
+    scanf(" %c", &op);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    if(op == '+') printf("%d + %d = %d", a, b, a+b);
+    else if(op == '-') printf("%d - %d = %d", a, b, a-b);
+    else if(op == '*') printf("%d * %d = %d", a, b, a*b);
+    else if(op == '/') printf("%d / %d = %d", a, b, a/b);
+    else printf("Invalid operator!");
+    
+    return 0;
+}
+  </pre>
+<div class="buy">
+  <button class="buy-btn" onclick="location.href='buynow.html'">Buy Now</button>
+
+</div>
+
+  <!-- Back Button -->
+  <a href="updatd one.html" class="back-btn">⬅ Back to Courses</a>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 1999 COURSA. All Rights Reserved.</p>
+    <p>
+      <a href="#">Home</a> | 
+      <a href="#">About</a> | 
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
